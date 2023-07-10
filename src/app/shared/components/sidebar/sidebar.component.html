@@ -6,6 +6,7 @@
     <button
       class="list-group-item list-group-item-action"
       *ngFor="let busquedas of tags"
+      (click)="search(busquedas)"
     >
       {{ busquedas | titlecase }}
     </button>
